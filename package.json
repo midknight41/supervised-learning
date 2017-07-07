@@ -1,6 +1,6 @@
 {
   "name": "supervised-learning",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Toolkit to get started with supervised machine learning",
   "main": "./src/lib/index.js",
   "scripts": {
