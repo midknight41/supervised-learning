@@ -1,0 +1,56 @@
+{
+  "name": "supervised-learning",
+  "version": "0.0.0",
+  "description": "Toolkit to get started with supervised machine learning",
+  "main": "./src/lib/index.js",
+  "scripts": {
+    "travis": "npm run test",
+    "test": "lab ./src/test/ -v -S --assert code",
+    "premajor": "npm run test",
+    "major": "npm version major -m \"published to npm as v%s\" && git push --follow-tags && npm publish",
+    "preminor": "npm run test",
+    "minor": "npm version minor -m \"published to npm as v%s\" && git push --follow-tags && npm publish",
+    "prepatch": "npm run test",
+    "patch": "npm version patch -m \"published to npm as v%s\" && git push --follow-tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midknight41/supervised-learning.git"
+  },
+  "keywords": [
+    "supervised",
+    "machine",
+    "learning",
+    "classification",
+    "training",
+    "classifier",
+    "bayes",
+    "natural"
+  ],
+  "author": "Chad Macey",
+  "contributors": [
+    "Chad Macey <chad_macey@hotmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/midknight41/supervised-learning/issues"
+  },
+  "homepage": "https://github.com/midknight41/supervised-learning#readme",
+  "dependencies": {
+    "code": "^4.1.0",
+    "hoek": "^4.1.0",
+    "lab-testing": "^2.3.0",
+    "lodash": "^4.17.4",
+    "map-factory": "^2.2.0",
+    "natural": "^0.5.0"
+  },
+  "devDependencies": {
+    "code": "^4.0.0",
+    "eslint": "^3.15.0",
+    "lab": "^13.0.2",
+    "lab-testing": "^2.1.0"
+  },
+  "files": [
+    "src/lib"
+  ]
+}
